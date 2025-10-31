@@ -158,8 +158,6 @@ Enrollment completes with:
 - Application of configuration and compliance policies
 - Microsoft Launcher automatically set as the home interface
   
-<img width="970" height="525" alt="image" src="https://github.com/user-attachments/assets/42d925f0-d905-44c3-b101-742bda18178e" />
-
 *Ref 7: Enrollment process*
 
 #### 8. End-User Experience
