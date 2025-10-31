@@ -1,0 +1,329 @@
+﻿{
+    "kind": "androidenterprise#managedConfiguration",
+    "productId": "app:com.microsoft.launcher",
+    "managedProperty": [
+        {
+            "key": "com.microsoft.launcher.Search.SearchBar.Placement",
+            "valueString": "Top"
+        },
+        {
+            "key": "com.microsoft.launcher.Search.SearchBar.Placement.UserChangeAllowed",
+            "valueBool": false
+        },
+        {
+            "key": "com.microsoft.launcher.Dock.Mode",
+            "valueString": "Hidden"
+        },
+        {
+            "key": "com.microsoft.launcher.Dock.Mode.UserChangeAllowed",
+            "valueBool": false
+        },
+        {
+            "key": "com.microsoft.launcher.HomeScreen.AppOrder.UserChangeAllowed",
+            "valueBool": false
+        },
+        {
+            "key": "com.microsoft.launcher.HomeScreen.GridSize",
+            "valueString": "default"
+        },
+        {
+            "key": "com.microsoft.launcher.Feed.Enable.UserChangeAllowed",
+            "valueBool": false
+        },
+        {
+            "key": "com.microsoft.launcher.Feed.Enable",
+            "valueBool": false
+        },
+        {
+            "key": "com.microsoft.launcher.Wallpaper.Url",
+            "valueString": ""
+        },
+        {
+            "key": "com.microsoft.launcher.Wallpaper.Url.UserChangeAllowed",
+            "valueBool": true
+        },
+        {
+            "key": "com.microsoft.launcher.HomeScreen.Applications",
+            "valueBundleArray": [
+                {
+                    "managedProperty": [
+                        {
+                            "key": "package",
+                            "valueString": "com.sec.android.app.myfiles"
+                        },
+                        {
+                            "key": "class",
+                            "valueString": ""
+                        }
+                    ]
+                },
+                {
+                    "managedProperty": [
+                        {
+                            "key": "package",
+                            "valueString": "com.samsung.android.messaging"
+                        },
+                        {
+                            "key": "class",
+                            "valueString": ""
+                        }
+                    ]
+                },
+                {
+                    "managedProperty": [
+                        {
+                            "key": "package",
+                            "valueString": "com.samsung.android.app.contacts"
+                        },
+                        {
+                            "key": "class",
+                            "valueString": ""
+                        }
+                    ]
+                },
+                {
+                    "managedProperty": [
+                        {
+                            "key": "package",
+                            "valueString": "com.samsung.android.dialer"
+                        },
+                        {
+                            "key": "class",
+                            "valueString": ""
+                        }
+                    ]
+                },
+                {
+                    "managedProperty": [
+                        {
+                            "key": "package",
+                            "valueString": "com.microsoft.emmx"
+                        },
+                        {
+                            "key": "class",
+                            "valueString": ""
+                        }
+                    ]
+                },
+                {
+                    "managedProperty": [
+                        {
+                            "key": "package",
+                            "valueString": "com.microsoft.office.outlook"
+                        },
+                        {
+                            "key": "class",
+                            "valueString": ""
+                        }
+                    ]
+                },
+                {
+                    "managedProperty": [
+                        {
+                            "key": "package",
+                            "valueString": "com.microsoft.teams"
+                        },
+                        {
+                            "key": "class",
+                            "valueString": ""
+                        }
+                    ]
+                },
+                {
+                    "managedProperty": [
+                        {
+                            "key": "package",
+                            "valueString": "com.azure.authenticator"
+                        },
+                        {
+                            "key": "class",
+                            "valueString": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "key": "com.microsoft.launcher.HomeScreen.WebLinks",
+            "valueBundleArray": [
+                {
+                    "managedProperty": [
+                        {
+                            "key": "label",
+                            "valueString": "Microsoft"
+                        },
+                        {
+                            "key": "link",
+                            "valueString": "https://www.microsoft.com/"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "key": "com.microsoft.launcher.HomeScreen.AppOrder",
+            "valueBundleArray": [
+                {
+                    "managedProperty": [
+                        {
+                            "key": "type",
+                            "valueString": "application"
+                        },
+                        {
+                            "key": "position",
+                            "valueInteger": 11
+                        },
+                        {
+                            "key": "package",
+                            "valueString": "com.sec.android.app.myfiles"
+                        },
+                        {
+                            "key": "class",
+                            "valueString": ""
+                        }
+                    ]
+                },
+                {
+                    "managedProperty": [
+                        {
+                            "key": "type",
+                            "valueString": "application"
+                        },
+                        {
+                            "key": "position",
+                            "valueInteger": 13
+                        },
+                        {
+                            "key": "package",
+                            "valueString": "com.samsung.android.messaging"
+                        },
+                        {
+                            "key": "class",
+                            "valueString": ""
+                        }
+                    ]
+                },
+                {
+                    "managedProperty": [
+                        {
+                            "key": "type",
+                            "valueString": "application"
+                        },
+                        {
+                            "key": "position",
+                            "valueInteger": 14
+                        },
+                        {
+                            "key": "package",
+                            "valueString": "com.samsung.android.app.contacts"
+                        },
+                        {
+                            "key": "class",
+                            "valueString": ""
+                        }
+                    ]
+                },
+                {
+                    "managedProperty": [
+                        {
+                            "key": "type",
+                            "valueString": "application"
+                        },
+                        {
+                            "key": "position",
+                            "valueInteger": 15
+                        },
+                        {
+                            "key": "package",
+                            "valueString": "com.samsung.android.dialer"
+                        },
+                        {
+                            "key": "class",
+                            "valueString": ""
+                        }
+                    ]
+                },
+                {
+                    "managedProperty": [
+                        {
+                            "key": "type",
+                            "valueString": "application"
+                        },
+                        {
+                            "key": "position",
+                            "valueInteger": 21
+                        },
+                        {
+                            "key": "package",
+                            "valueString": "com.microsoft.emmx"
+                        },
+                        {
+                            "key": "class",
+                            "valueString": ""
+                        }
+                    ]
+                },
+                {
+                    "managedProperty": [
+                        {
+                            "key": "type",
+                            "valueString": "application"
+                        },
+                        {
+                            "key": "position",
+                            "valueInteger": 22
+                        },
+                        {
+                            "key": "package",
+                            "valueString": "com.microsoft.office.outlook"
+                        },
+                        {
+                            "key": "class",
+                            "valueString": ""
+                        }
+                    ]
+                },
+                {
+                    "managedProperty": [
+                        {
+                            "key": "type",
+                            "valueString": "application"
+                        },
+                        {
+                            "key": "position",
+                            "valueInteger": 24
+                        },
+                        {
+                            "key": "package",
+                            "valueString": "com.microsoft.teams"
+                        },
+                        {
+                            "key": "class",
+                            "valueString": ""
+                        }
+                    ]
+                },
+                {
+                    "managedProperty": [
+                        {
+                            "key": "type",
+                            "valueString": "application"
+                        },
+                        {
+                            "key": "position",
+                            "valueInteger": 25
+                        },
+                        {
+                            "key": "package",
+                            "valueString": "com.azure.authenticator"
+                        },
+                        {
+                            "key": "class",
+                            "valueString": ""
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
