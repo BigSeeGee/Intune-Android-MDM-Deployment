@@ -117,7 +117,7 @@ All apps were assigned as Required ensuring automatic installation after enrollm
 Using Intune App Configuration Policies, selected apps (such as Outlook, Teams, and Authenticator) can be preconfigured for example for SSO login using Entra ID credentials or automatic email account setup.
 This guarantees that after enrollment, every device has all essential M365 apps pre-installed, properly configured, and secured.
 
-<img width="970" height="525" alt="image" src="https://github.com/user-attachments/assets/42d925f0-d905-44c3-b101-742bda18178e" />
+<img width="1069" height="547" alt="image" src="https://github.com/user-attachments/assets/eca295ef-0eb7-4db1-b785-23fcb9c7d67f" />
 
 *Ref 5: Aplication deployment*
 
@@ -143,7 +143,10 @@ JSON configuration settings are in directory of this project.
 
 *Ref 6: Microsoft Launcher Configuration*
 
-#### 7. Enrollment via QR Token
+#### 7. Microsoft Defender configuration
+
+
+#### 9. Enrollment via QR Token
 
 Devices were enrolled manually using the QR code generated from the Android Enterprise enrollment profile in Intune.
 Enrollment Steps:
