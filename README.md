@@ -49,7 +49,7 @@ This configuration ensures a hardened and standardized security posture across a
 | Category              | Setting                   | Value                                         |
 | --------------------- | ------------------------- | --------------------------------------------- |
 | **General**           | Date & Time changes       | Block                                         |
-|                       | Wi-Fi configuration       | Block                                         |
+|                       | Wi-Fi configuration       | Block - CONFIGURE Wi-Fi SETTINGS BEFORE OR TEST THIS POLICY, BEACUSE YOU CAN LOSE NETOWORK CONNECTION!!!! |
 |                       | Bluetooth configuration   | Block                                         |
 |                       | USB file transfer         | Block                                         |
 |                       | External media            | Block                                         |
@@ -120,3 +120,49 @@ This guarantees that after enrollment, every device has all essential M365 apps 
 <img width="970" height="525" alt="image" src="https://github.com/user-attachments/assets/42d925f0-d905-44c3-b101-742bda18178e" />
 
 *Ref 5: Aplication deployment*
+
+#### 6. Microsoft Launcher Configuration
+
+The configuration enforces layout consistency, hides the dock, pins essential work apps (Outlook, Teams, Authenticator, Edge), and locks the search bar position at the top.
+This ensures users always see a clean, standardized launcher interface with pre-defined shortcuts and minimal customization options.
+JSON configuration settings are in directory of this project.
+
+| Aplication    | Package                            |
+| ------------- | ---------------------------------- |
+| Files         | `com.sec.android.app.myfiles`      |
+| Messages      | `com.samsung.android.messaging`    |
+| Contacts      | `com.samsung.android.app.contacts` |
+| Phone         | `com.samsung.android.dialer`       |
+| Edge          | `com.microsoft.emmx`               |
+| Outlook       | `com.microsoft.office.outlook`     |
+| Teams         | `com.microsoft.teams`              |
+| Authenticator | `com.azure.authenticator`          |
+| Web link      | `https://www.microsoft.com/`       |
+
+<img width="1046" height="878" alt="image" src="https://github.com/user-attachments/assets/7f155073-e8a2-43c6-be21-22971c508d8c" />
+
+*Ref 6: Microsoft Launcher Configuration*
+
+#### 7. Enrollment via QR Token
+
+Devices were enrolled manually using the QR code generated from the Android Enterprise enrollment profile in Intune.
+Enrollment Steps:
+- Factory reset the device.
+- On the welcome screen, tap the screen six times to launch the QR code setup wizard.
+- Connect to Wi-Fi (or use wired connection) and scan the enrollment QR code generated in Intune.
+- Device automatically downloads the Intune DPC (Android Device Policy) and begins configuration.
+
+Enrollment completes with:
+- Device registration in Microsoft Entra ID
+- Automatic installation of required corporate apps
+- Application of configuration and compliance policies
+- Microsoft Launcher automatically set as the home interface
+  
+<img width="970" height="525" alt="image" src="https://github.com/user-attachments/assets/42d925f0-d905-44c3-b101-742bda18178e" />
+
+*Ref 7: Enrollment process*
+
+#### 8. End-User Experience
+
+*Ref 8: End-User Experience*
+
