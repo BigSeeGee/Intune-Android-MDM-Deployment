@@ -3,7 +3,7 @@
 ## Objective
 
 This project demonstrates the deployment and configuration of Microsoft Intune for corporate-owned Android devices.
-The goal was to create a secure, standardized, and user-friendly mobile device management environment for company-owned endpoints which includes device configuration, compliance enforcement, and application management.
+The goal was to create a secure, standardized, and user-friendly mobile device management environment for company-owned endpoints, including device configuration, compliance enforcement, and application management.
 The deployment was tested and validated on Samsung Galaxy A55, A54, and A14 devices.
 
 ### Skills Learned
@@ -12,7 +12,7 @@ The deployment was tested and validated on Samsung Galaxy A55, A54, and A14 devi
 - Configuration of Intune device and compliance policies for Android.
 - Deployment and customization of Microsoft Launcher for corporate use.
 - App lifecycle management using Managed Google Play and App Configuration Policies.
-- Hands-on experience with QR token–based enrollment for Android devices.
+- Hands-on experience with QR token-based enrollment for Android devices.
 - Practical knowledge of device hardening and CIS Benchmark alignment for mobile endpoints.
 
 ### Tools Used
@@ -21,7 +21,7 @@ The deployment was tested and validated on Samsung Galaxy A55, A54, and A14 devi
 - Android Enterprise with Managed Google Play
 - Microsoft Launcher (corporate customization)
 - Company Portal / Intune App
-- CIS Google Android Benchmark v1.5.0 manual/documentation?
+- CIS Google Android Benchmark v1.5.0 documentation
 
 ## Steps
 
@@ -49,7 +49,7 @@ This configuration ensures a hardened and standardized security posture across a
 | Category              | Setting                   | Value                                         |
 | --------------------- | ------------------------- | --------------------------------------------- |
 | **General**           | Date & Time changes       | Block                                         |
-|                       | Wi-Fi configuration       | Block - CONFIGURE Wi-Fi SETTINGS BEFORE OR TEST THIS POLICY, BEACUSE YOU CAN LOSE NETOWORK CONNECTION!!!! |
+|                       | Wi-Fi configuration       | Block - CONFIGURE Wi-Fi SETTINGS BEFORE TESTING THIS POLICY, BECAUSE YOU CAN LOSE NETWORK CONNECTION! |
 |                       | Bluetooth configuration   | Block                                         |
 |                       | USB file transfer         | Block                                         |
 |                       | External media            | Block                                         |
@@ -114,20 +114,20 @@ Non-compliant devices were automatically flagged and blocked from accessing M365
 
 Added core corporate apps from Managed Google Play:
 All apps were assigned as Required ensuring automatic installation after enrollment.
-Using Intune App Configuration Policies, selected apps (such as Outlook, Teams, and Authenticator) can be preconfigured for example for SSO login using Entra ID credentials or automatic email account setup.
+Using Intune App Configuration Policies, selected apps (such as Outlook, Teams, and Authenticator) can be preconfigured, for example, for SSO login using Entra ID credentials or automatic email account setup.
 This guarantees that after enrollment, every device has all essential M365 apps pre-installed, properly configured, and secured.
 
 <img width="1069" height="547" alt="image" src="https://github.com/user-attachments/assets/eca295ef-0eb7-4db1-b785-23fcb9c7d67f" />
 
-*Ref 5: Aplication deployment*
+*Ref 5: Application deployment*
 
 #### 6. Microsoft Launcher Configuration
 
 The configuration enforces layout consistency, hides the dock, pins essential work apps (Outlook, Teams, Authenticator, Edge), and locks the search bar position at the top.
 This ensures users always see a clean, standardized launcher interface with pre-defined shortcuts and minimal customization options.
-JSON configuration settings are in directory of this project.
+JSON configuration files are included in this project’s directory.
 
-| Aplication    | Package                            |
+| Application    | Package                            |
 | ------------- | ---------------------------------- |
 | Files         | `com.sec.android.app.myfiles`      |
 | Messages      | `com.samsung.android.messaging`    |
@@ -143,27 +143,22 @@ JSON configuration settings are in directory of this project.
 
 *Ref 6: Microsoft Launcher Configuration*
 
-#### 7. Microsoft Defender configuration
-
-
-#### 9. Enrollment via QR Token
+#### 7. Enrollment via QR Token and End-User Experience
 
 Devices were enrolled manually using the QR code generated from the Android Enterprise enrollment profile in Intune.
 Enrollment Steps:
 - Factory reset the device.
-- On the welcome screen, tap the screen six times to launch the QR code setup wizard.
+- On the welcome screen, tap six times to launch the QR code enrollment wizard.
 - Connect to Wi-Fi (or use wired connection) and scan the enrollment QR code generated in Intune.
-- Device automatically downloads the Intune DPC (Android Device Policy) and begins configuration.
+- Device automatically downloads the Intune device policy and begins configuration.
 
 Enrollment completes with:
 - Device registration in Microsoft Entra ID
 - Automatic installation of required corporate apps
 - Application of configuration and compliance policies
 - Microsoft Launcher automatically set as the home interface
-  
+
+![enrollment](https://github.com/user-attachments/assets/c6817e63-90a7-45a6-8554-839f2704f01f)
+
 *Ref 7: Enrollment process*
-
-#### 8. End-User Experience
-
-*Ref 8: End-User Experience*
 
